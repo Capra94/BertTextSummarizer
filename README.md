@@ -1,28 +1,38 @@
-Text Summarizer
-Overview
-This project combines a Flask-based backend API and a React frontend to provide a user-friendly interface for text summarization. The backend uses BERT-based summarization techniques, while the frontend allows users to interact with the summarization service seamlessly.
+# Text Summarizer
 
-Features
-Backend (Flask API)
-BERT-based Summarization: Utilizes state-of-the-art BERT models for extracting key information from documents.
-Flask API: Built on Flask, providing a RESTful API for easy integration into web applications or services.
-Cross-Origin Resource Sharing (CORS): Allows for secure cross-origin communication, making it accessible from different domains.
-Frontend (React)
-User-Friendly Interface: Clean and intuitive interface for users to interact with the text summarization service.
-File Upload Support: Allows users to upload documents in various formats for summarization.
-Real-time Summarization: Displays the summarized text in real-time for immediate user feedback.
-Getting Started
-Prerequisites
-Python 3.x
-Pipenv (optional but recommended)
-Node.js and npm (for the React frontend)
-Backend Installation
-Clone the repository:
+## Overview
 
-bash
-Copy code
-git clone https://github.com/your-username/text-summarizer.git
-cd text-summarizer/backend
+This project combines a Flask-based backend API and a React frontend to provide a user-friendly interface for text summarization. The backend utilizes state-of-the-art BERT models for summarization, while the frontend allows users to interact with the summarization service seamlessly.
+
+## Features
+
+### Backend (Flask API)
+
+- **BERT-based Summarization:** Utilizes state-of-the-art BERT models for extracting key information from documents.
+- **Flask API:** Built on Flask, providing a RESTful API for easy integration into web applications or services.
+- **Cross-Origin Resource Sharing (CORS):** Allows for secure cross-origin communication, making it accessible from different domains.
+
+### Frontend (React)
+
+- **User-Friendly Interface:** Clean and intuitive interface for users to interact with the text summarization service.
+- **File Upload Support:** Allows users to upload documents in various formats for summarization.
+- **Real-time Summarization:** Displays the summarized text in real-time for immediate user feedback.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.x
+- Pipenv (optional but recommended)
+- Node.js and npm (for the React frontend)
+
+### Backend Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/text-summarizer.git
+   cd text-summarizer/backend
 Install dependencies:
 
 bash
@@ -59,9 +69,7 @@ Upload a document for summarization using the provided interface.
 Receive the summarized text in real-time.
 API Endpoint
 Endpoint: /summarize
-
 Method: POST
-
 Request Body:
 
 json
@@ -76,12 +84,8 @@ Copy code
 {
     "summary": "Your summarized text..."
 }
-Example
+Example:
+
 bash
 Copy code
-curl -X POST -H "Content-Type: application/json" -d '{"documentContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."}' http://localhost:5000/summarize
-Contributing
-Contributions are welcome! Feel free to submit issues or pull requests.
-
-License
-This project is licensed under the MIT License.
+curl -X POST -H "Content-Type: application/json" -d '{"documentContent": "Lorem ipsum dol
